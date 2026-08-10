@@ -3,8 +3,8 @@ import "./App.css";
 
 /* Персональные данные — меняются только здесь */
 const TARGET_NAME = "Арина";
-const TARGET_PHOTO = "./base.jpg"; // сюда можно вставить data:image/...;base64,... если хочешь хранить фото прямо в JSX
-const BACKGROUND_MUSIC = "/music.mp3";
+const TARGET_PHOTO = `${import.meta.env.BASE_URL}base.jpg`; // сюда можно вставить data:image/...;base64,... если хочешь хранить фото прямо в JSX
+const BACKGROUND_MUSIC = `${import.meta.env.BASE_URL}music.mp3`;
 
 const MATRIX_CHARS =
   "アァカサタナハマヤャラワ0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ♥♡✦✧";
@@ -292,7 +292,10 @@ function BootTerminal({ onComplete }) {
   className="launch-button"
   type="button"
   onClick={() => {
-    const audio = new Audio(BACKGROUND_MUSIC);
+    const audio = new Audio(
+      `${import.meta.env.BASE_URL}music.mp3`
+    );
+
     audio.loop = true;
     audio.volume = 0.35;
 
@@ -303,8 +306,7 @@ function BootTerminal({ onComplete }) {
     setStarted(true);
   }}
 >
-  <span>&gt; Жми Жми!</span>
-  <b>→</b>
+  Жми Жми!
 </button>
 
 
