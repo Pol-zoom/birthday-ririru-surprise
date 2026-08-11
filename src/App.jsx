@@ -632,7 +632,7 @@ function BirthdayExperience() {
                 <span>РОЖДЕНИЯ!</span>
               </h2>
 
-              <p>Самое главное — просто будь счастлива.</p>
+              <p>Самое главное - просто будь счастлива.</p>
               <p>
                 Пусть этот новый год твоей жизни принесёт тебе именно то,
                 чего тебе хочется больше всего.
@@ -650,7 +650,7 @@ function BirthdayExperience() {
         </div>
 
         <div className="interface-footer">
-          <span>LOVE_PROTOCOL v2.0</span>
+          <span>Temka_PROTOCOL v2.0</span>
           <span>STATUS: <b>COMPLETED</b></span>
         </div>
       </main>
