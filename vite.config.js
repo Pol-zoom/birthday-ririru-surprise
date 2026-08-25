@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
 
-  base: "/birthday-again-surprise/",
+  base: "/birthday-ririru-surprise/",
 
   build: {
     outDir: "dist",
